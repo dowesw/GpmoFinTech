@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: rgb(26, 26, 105);
+    --secondary: grey;
+    --tertiary: red;
+}
+
+body {
+    width: 98.5vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body object {
+    width: 100%;
+    height: auto;
+    border: none;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+body object.header {
+    height: 75px;
+    position: fixed;
+    top: 0;
+}
+
+body object.footer {
+    height: 100px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    margin-top: 415px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+
+button.secondaire {
+    background: var(--secondary);
+    color: white;
+}
+
+button.terciaire {
+    background: var(--tertiary);
+    color: white;
+}
+
+button.transparent {
+    background: transparent;
+    color: white;
+}
+
+button:hover {
+    background: var(--tertiary);
+    color: black;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--tertiary);
+}
+
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
