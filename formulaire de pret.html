@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="urf-8"/>
+        <title>Formulaire de prêt</title>
+        <link rel="stylesheet" type="text/css" media="all" href="css/formulaire-pret.css" />
+    </head>
+
+    <body>
+        <div class="formulaire-pret">
+			<form action="/" method="post">
+				<div>
+					<label for="montant">Entrez le montant (entre 1000 et 10000)</label>
+					<input type="text" id="montant" name="montant" placeholder="1000" required>
+				</div>
+				<div>
+					<label for="duree">Selectionner la duree</label>
+					<input type="duree" id="duree" name="duree" placeholder="12 mois" required>
+				</div>
+				<div class="form-min">
+					<label for="taux">Le taux d'intérêt sera de </label>
+					<input type="taux" id="taux" name="taux" 
+					placeholder="1.5" required>
+				</div>
+				<div class="form-min">
+					<label for="mensualité">La mensualité sera de</label>
+					<input type="mensualité" id="mensualité" name="mensualité" 
+					placeholder="235$" required>
+				</div>
+				<div class="form-min">
+					<label for="credit">Le crédit prendra fin le</label>
+					<input type="credit" id="credit" name="credit" 
+					placeholder="02/01/2000" required>
+				</div>
+				<div>
+					<button type="submit">Demander un prêt</button>
+				</div>
+			</form>
+		</div>
+
+    </body> 
+</html>
