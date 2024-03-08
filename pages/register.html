@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="GpmoFinTech" />
+    <link rel="icon" href="./../assets/favicon.ico" />
+    <link rel="apple-touch-icon" href="./../assets/apple-touch-icon.png" />
+    <link rel="manifest" href="./../assets/site.webmanifest" />
+    <title>GpmoFinTech - Register</title>
+    <link rel="stylesheet" type="text/css" href="./../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/register.css" />
+</head>
+
+<body>
+    <main class="register">
+        <section>
+            <a class="logo" href="/">
+                <img src="../../assets/logo.png" title="Logo GpmoFinTech" />
+            </a>
+            <form class="nui active">
+                <div>
+                    <label for="pays">Pays</label>
+                    <input type="text" id="pays" name="pays" placeholder="Pays">
+                </div>
+                <div>
+                    <label for="niu">NIU</label>
+                    <input type="niu" id="niu" name="niu" placeholder="niu">
+                </div>
+                <button onclick="handleNext(event)">Continuer</button>
+            </form>
+            <form class="perso">
+                <div class="col-2">
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    </div>
+                    <div>
+                        <label for="prenom">Prenom</label>
+                        <input type="prenom" id="prenom" name="prenom" placeholder="Prenom" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="phone">Adresse</label>
+                    <input type="adresse" id="adresse" name="adresse" placeholder="Adresse">
+                </div>
+                <div>
+                    <label for="adresse">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Téléphone">
+                </div>
+                <div class="col-2">
+                    <button onclick="handlePrec(event)">Precedent</button>
+                    <button onclick="handleNext(event)">Suivant</button>
+                </div>
+            </form>
+            <form class="login">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <div>
+                    <label for="re-password">Confirmation mot de passe</label>
+                    <input type="password" id="re-password" name="re-password" placeholder="Confirmer le password">
+                </div>
+                <div class="col-2">
+                    <button onclick="handlePrec(event)">Precedent</button>
+                    <button onclick="handleNext(event)">Suivant</button>
+                </div>
+            </form>
+            <form class="contrat">
+                <button>Enregistrer</button>
+            </form>
+            <p class="link-login">Si vous avez un compte, <a href="./login.html">cliquer ici</a></p>
+        </section>
+        </div>
+        <script src="./../script/register.js"></script>
+</body>
+
+</html>

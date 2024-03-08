@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="GpmoFinTech" />
@@ -16,13 +15,13 @@
 </head>
 
 <body>
-    <object class="header" type="text/html" data="./components/header/index.html"></object>
+    <section id="header"></section>
     <main>
         <section class="banniere">
             <p>Une meilleure facon d'envoyer de l'argent à vos proches et de payer vos factures</p>
             <div class="actions">
-                <button>Demander un pret</button>
-                <button class="transparent">Simuler un pret</button>
+                <button onclick="gotoPret(false)">Demander un pret</button>
+                <button class="transparent" onclick="gotoPret(true)">Simuler un pret</button>
             </div>
         </section>
         <section class="avantage">
@@ -60,8 +59,9 @@
             </article>
         </section>
     </main>
-    <object class="footer" type="text/html" data="./components/footer/index.html"></object>
+    <section id="footer"></section>
+    <script src="./script/index.js"></script>
+    <script src="./script/home.js"></script>
 </body>
-<script src="script/index.js"></script>
 
 </html>
