@@ -1,0 +1,34 @@
+body {
+    width: 100vw;
+}
+
+main {
+    margin: 0;
+}
+
+.profil {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil .conteneur {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: white;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.profil form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
