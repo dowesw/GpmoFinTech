@@ -1,3 +1,11 @@
+(function() {
+    let body = localStorage.getItem("user")
+    if (!body) {
+        body = sessionStorage.getItem("user")
+    }
+    console.log(JSON.parse(body))
+})();
+
 function imports(parent) {
     fetch(parent + 'header.html')
         .then(response => response.text())
