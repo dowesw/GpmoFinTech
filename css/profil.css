@@ -19,10 +19,12 @@ main {
     min-width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 20px;
     background: white;
     gap: 10px;
     border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
 }
 
 .profil form div {
@@ -30,5 +32,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.profil form .bouton {
+    margin-top: 10px;
 }
 
