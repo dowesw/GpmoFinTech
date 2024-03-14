@@ -44,7 +44,10 @@ main section.contents {
     display: flex;
     flex-direction: column;
     background: whitesmoke;
-    border-radius: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: 20px;
+    padding: 20px;
 }
 
 main section.avantage {
@@ -70,6 +73,7 @@ main section.avantage article {
     gap: 10px;
     background: white;
     border-radius: 20px;
+    box-shadow: var(--primary) 1.95px 1.95px 2.6px;
 }
 
 main section.avantage article h2 {
