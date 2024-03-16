@@ -22,12 +22,17 @@
             </a>
             <form class="nui active">
                 <div>
-                    <label for="pays">Pays</label>
-                    <input type="text" id="pays" name="pays" placeholder="Pays">
+                    <label for="pays">Choisir la pièce d'identification</label>
+                    <select id="id" name="id">
+                        <option value="NAS">NAS</option>
+                        <option value="RAMQ">RAMQ</option>
+                        <option value="PERMIS">PERMIS CONDUIRE</option>
+                        <option value="PASSPORT">PASSPORT</option>
+                    </select>
                 </div>
                 <div>
                     <label for="niu">NIU</label>
-                    <input type="niu" id="niu" name="niu" placeholder="niu">
+                    <input type="niu" id="niu" name="niu" placeholder="niu" required>
                 </div>
                 <button onclick="handleNext(event)">Continuer</button>
             </form>
@@ -43,12 +48,56 @@
                     </div>
                 </div>
                 <div>
+                    <label for="datenaissance">Date de naissance</label>
+                    <input type="date" id="datenaissance" name="datenaissance" placeholder="Date de naissance">
+                </div>
+                <div>
+                    <label for="pays">Pays</label>
+                    <input type="text" id="pays" name="pays" placeholder="Pays">
+                </div>
+                <div>
                     <label for="phone">Adresse</label>
                     <input type="adresse" id="adresse" name="adresse" placeholder="Adresse">
                 </div>
                 <div>
                     <label for="adresse">Téléphone</label>
                     <input type="tel" id="phone" name="phone" placeholder="Téléphone">
+                </div>
+                <div class="col-2">
+                    <button onclick="handlePrec(event)">Precedent</button>
+                    <button onclick="handleNext(event)">Suivant</button>
+                </div>
+            </form>
+            <form class="prof">
+                <div>
+                    <label for="companie">Nom de l'entreprise</label>
+                    <input type="text" id="companie" name="companie" placeholder="Companie" required>
+                </div>
+                <div>
+                    <label for="poste">Poste occupé</label>
+                    <input type="poste" id="poste" name="poste" placeholder="Poste" required>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <label for="nbrhrsem">Nbr hr/sem</label>
+                        <input type="number" id="nbrhrsem" name="nbrhrsem" placeholder="Nbr hr/sem">
+                    </div>
+                    <div>
+                        <label for="tauxhr">Taux horaire</label>
+                        <input type="number" id="tauxhr" name="tauxhr" placeholder="Taux horaire">
+                    </div>
+                </div>
+                <div>
+                    <label for="dateembauche">Date d'embauche</label>
+                    <input type="date" id="dateembauche" name="dateembauche" placeholder="Date d'embauche">
+                </div>
+                <div>
+                    <label for="nomresponsable">Nom du responsable</label>
+                    <input type="text" id="nomresponsable" name="nomresponsable" placeholder="Nom du responsable">
+                </div>
+                <div>
+                    <label for="contactresponsable">Contact du responsable (téléphone | adresse email)</label>
+                    <input type="text" id="contactresponsable" name="contactresponsable" placeholder="Contact du responsable">
                 </div>
                 <div class="col-2">
                     <button onclick="handlePrec(event)">Precedent</button>
@@ -74,6 +123,14 @@
                 </div>
             </form>
             <form class="contrat">
+                <p>
+                    Vous devez signer le contrat et nous le renvoyer pour vérifier votre compte.
+                    <a href="./../assets/resources/Convention de prêt.docx">Cliquer ici pour le télécharger</a>
+                </p>
+                <div class="form-group">
+                    <input type="checkbox" id="acceptcondition" name="acceptcondition" />
+                    <label for="acceptcondition">En continuant, vous acceptez les conditions générales, la politique de confidentialité et la politique en matière de cookies</label>
+                </div>
                 <button>Enregistrer</button>
             </form>
             <p class="link-login">Si vous avez un compte, <a href="./login.html">cliquer ici</a></p>

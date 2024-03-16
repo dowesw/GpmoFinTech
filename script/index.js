@@ -22,7 +22,6 @@ function onConnect() {
         profile.classList.remove("visible")
         profile.classList.add("invisible")
     }
-    console.log(JSON.parse(body))
 }
 
 function imports(parent) {
@@ -40,4 +39,10 @@ function imports(parent) {
             document.getElementById('footer').innerHTML = content;
         })
         .catch(error => console.error('Erreur de chargement de la page externe:', error));
+}
+
+function handleLogOut() {
+    sessionStorage.removeItem("user")
+    localStorage.removeItem("user")
+    document.location.href = "/"
 }

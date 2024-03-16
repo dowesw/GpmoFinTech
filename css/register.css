@@ -77,3 +77,8 @@ main {
 .register section form.active {
     display: flex;
 }
+
+.register form .form-group {
+    display: flex;
+    flex-direction: row;
+}
