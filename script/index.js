@@ -3,10 +3,7 @@
 })();
 
 function onConnect() {
-    let body = localStorage.getItem("user")
-    if (!body) {
-        body = sessionStorage.getItem("user")
-    }
+    let body = getUser()
     const profile = document.querySelector('#profile')
     const btnlogin = document.querySelector('#btn-login')
     if (!!body) {
@@ -45,4 +42,12 @@ function handleLogOut() {
     sessionStorage.removeItem("user")
     localStorage.removeItem("user")
     document.location.href = "/"
+}
+
+function getUser() {
+    let user = localStorage.getItem("user")
+    if (!user) {
+        user = sessionStorage.getItem("user")
+    }
+    return user;
 }

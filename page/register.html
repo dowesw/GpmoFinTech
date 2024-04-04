@@ -20,7 +20,7 @@
             <a class="logo" href="/">
                 <img src="../../assets/logo.png" title="Logo GpmoFinTech" />
             </a>
-            <form class="nui active">
+            <form class="nui active" onsubmit="handleNext(event)">
                 <div>
                     <label for="pays">Choisir la pièce d'identification</label>
                     <select id="id" name="id">
@@ -34,9 +34,9 @@
                     <label for="niu">NIU</label>
                     <input type="niu" id="niu" name="niu" placeholder="niu" required>
                 </div>
-                <button onclick="handleNext(event)">Continuer</button>
+                <button type="submit">Continuer</button>
             </form>
-            <form class="perso">
+            <form class="perso" onsubmit="handleNext(event)">
                 <div class="col-2">
                     <div>
                         <label for="nom">Nom</label>
@@ -65,10 +65,10 @@
                 </div>
                 <div class="col-2">
                     <button onclick="handlePrec(event)">Precedent</button>
-                    <button onclick="handleNext(event)">Suivant</button>
+                    <button type="submit">Suivant</button>
                 </div>
             </form>
-            <form class="prof">
+            <form class="prof" onsubmit="handleNext(event)">
                 <div>
                     <label for="companie">Nom de l'entreprise</label>
                     <input type="text" id="companie" name="companie" placeholder="Companie" required>
@@ -101,25 +101,25 @@
                 </div>
                 <div class="col-2">
                     <button onclick="handlePrec(event)">Precedent</button>
-                    <button onclick="handleNext(event)">Suivant</button>
+                    <button type="submit">Suivant</button>
                 </div>
             </form>
-            <form class="login">
+            <form class="login" onsubmit="handleNext(event)">
                 <div>
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Email">
+                    <input type="text" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div>
                     <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" placeholder="Password">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
                 </div>
                 <div>
                     <label for="re-password">Confirmation mot de passe</label>
-                    <input type="password" id="re-password" name="re-password" placeholder="Confirmer le password">
+                    <input type="password" id="re-password" name="re-password" placeholder="Confirmer le password" required>
                 </div>
                 <div class="col-2">
                     <button onclick="handlePrec(event)">Precedent</button>
-                    <button onclick="handleNext(event)">Suivant</button>
+                    <button type="submit">Suivant</button>
                 </div>
             </form>
             <form class="contrat">

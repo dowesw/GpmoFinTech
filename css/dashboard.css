@@ -1,0 +1,78 @@
+body {
+    width: 100vw;
+}
+
+.dashboard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .demande {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background: var(--primary);
+    padding: 100px 20px 20px 20px;
+}
+
+.dashboard .demande[aria-expanded=false] {
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard .demande h2 {
+    color: white;
+}
+
+.dashboard .mensualite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.dashboard .mensualite h6 {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.dashboard .mensualite h6 a {
+    color: blue;
+    font-style: italic;
+}
+
+.dashboard .mensualite table {
+    width: 100%;
+}
+
+.dashboard .mensualite table thead {
+    background: var(--primary);
+    color: white;
+}
+
+.dashboard .mensualite table thead tr th {
+    padding: 10px;
+}
+
+.dashboard .mensualite table tbody tr td {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.dashboard .mensualite table tbody tr td.montant {
+    text-align: right;
+}
+
+.dashboard .mensualite table tbody tr td.status,
+.dashboard .mensualite table tbody tr td.action {
+    height: 30px;
+    text-align: center;
+}
+
+.dashboard .mensualite table tbody tr td.action button {
+    padding: 5px 20px;
+}

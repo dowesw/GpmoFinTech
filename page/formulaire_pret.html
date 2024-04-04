@@ -24,19 +24,23 @@
             </div>
             <div>
                 <label for="duree">Selectionner la duree</label>
-                <input type="duree" id="duree" name="duree" placeholder="12 mois" required>
+                <select>
+                    <option>1 mois</option>
+                    <option>2 mois</option>
+                    <option>3 mois</option>
+                </select>
             </div>
             <div class="form-min">
                 <label for="taux">Le taux d'intérêt sera de </label>
-                <input type="taux" id="taux" name="taux" placeholder="1.5" required>
+                <input type="taux" id="taux" name="taux" placeholder="1.5" readonly>
             </div>
             <div class="form-min">
                 <label for="mensualité">La mensualité sera de</label>
-                <input type="mensualité" id="mensualité" name="mensualité" placeholder="235$" required>
+                <input type="mensualité" id="mensualité" name="mensualité" placeholder="235$" readonly>
             </div>
             <div class="form-min">
                 <label for="credit">Le crédit prendra fin le</label>
-                <input type="credit" id="credit" name="credit" placeholder="02/01/2000" required>
+                <input type="credit" id="credit" name="credit" placeholder="02/01/2000" readonly>
             </div>
             <div>
                 <button type="submit">Demander un prêt</button>
