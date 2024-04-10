@@ -9,5 +9,14 @@
 })();
 
 function gotoPret(simulation) {
+    console.log(simulation)
+    if (!simulation) {
+        const user = getUser()
+        console.log(user)
+        if (!user) {
+            document.location.href = './page/login.html'
+            return;
+        }
+    }
     document.location.href = './page/formulaire_pret.html' + (simulation ? "?simulation=true" : "")
 }
