@@ -12,6 +12,22 @@ main {
     padding: 0;
 }
 
+#header.accueil {
+    color: white;
+}
+
+#header.accueil header[aria-expanded=true] {
+    color: black;
+}
+
+#header.accueil .header-user img {
+    border-color: white;
+}
+
+#header.accueil header[aria-expanded=true] .header-user img {
+    border-color: black;
+}
+
 main section:last-child {
     margin-bottom: 50px;
 }
