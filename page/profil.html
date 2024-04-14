@@ -17,47 +17,143 @@
     <body>
         <section id="header"></section>
         <main class="profil">
-                <div class="conteneur">
-                    <p>Informations Générales</p>
-    
-                    <form>
-                        <div>
-                            <label for="nom">Nom</label>
-                            <input type="text" id="nom" name="nom" placeholder="Nom">
-                        </div>
-                        <div>
-                            <label for="prenom">Prenom</label>
-                            <input type="prenom" id="prenom" name="prenom" placeholder="Prenom">
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="email">
-                        </div>
-                        <div class="bouton">
-                            <button type="submit">Enregistrer</button>
-                        </div>
-                    </form>  
-                
-                    <p>Informations de Localisatios</p>
-    
-                    <form>
-                        <div>
-                            <label for="pays">Pays</label>
-                            <input type="text" id="pays" name="pays" placeholder="Pays">
-                        </div>
-                        <div>
-                            <label for="adresse">Adresse</label>
-                            <input type="adresse" id="adresse" name="adresse" placeholder="adresse">
-                        </div>
-                        <div>
-                            <label for="telephone">Téléphone</label>
-                            <input type="telephone" id="telephone" name="telephone" placeholder="telephone">
-                        </div>
-                        <div class="bouton">
-                            <button type="submit">Enregistrer</button>
-                        </div>
-                    </form> 
-                </div>       
+                <div class="conteneur"> 
+                    <div id="personnelles" class="contenuTab"> 
+                        <h3>Informations personnelles</h3> 
+              
+                        <form>
+                            <div>
+                                <label for="nom">Nom</label>
+                                <input type="text" id="nom" name="nom" placeholder="Nom">
+                            </div>
+                            <div>
+                                <label for="prenom">Prenom</label>
+                                <input type="prenom" id="prenom" name="prenom" placeholder="Prenom">
+                            </div>
+                            <div>
+                                <label for="pays">Pays</label>
+                                <input type="text" id="pays" name="pays" placeholder="Pays">
+                            </div>
+                            <div>
+                                <label for="adresse">Adresse</label>
+                                <input type="adresse" id="adresse" name="adresse" placeholder="adresse">
+                            </div>
+                            <div>
+                                <label for="telephone">Téléphone</label>
+                                <input type="telephone" id="telephone" name="telephone" placeholder="telephone">
+                            </div>
+                            <div class="bouton">
+                                <button type="submit">Enregistrer</button>
+                            </div>
+                        </form>  
+
+                    </div> 
+              
+                    <div id="professionnelles" class="contenuTab"> 
+                        <h3>Informations professionnelles</h3> 
+              
+                        <form>
+                            <div>
+                                <label for="nom">Nom de l'Entreprise</label>
+                                <input type="text" id="nom" name="nom" placeholder="Nom">
+                            </div>
+                            <div>
+                                <label for="poste">Poste occupé</label>
+                                <input type="poste" id="poste" name="poste" placeholder="Poste">
+                            </div>
+                            <div>
+                                <label for="date">Date embauche</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+                            <div class="col-2">
+                                <div>
+                                    <label for="nom">Nom du responsable</label>
+                                    <input type="text" id="nom" name="nom" placeholder="Nom">
+                                </div>
+                                <div>
+                                    <label for="telephone">Contact du responsable</label>
+                                    <input type="telephone" id="telephone" name="telephone" placeholder="telephone">
+                                </div>
+                            </div>                            
+                            <div class="col-2">
+                                <div>
+                                    <label for="nbrhrsem">Nbr hr/sem</label>
+                                    <input type="number" id="nbrhrsem" name="nbrhrsem" placeholder="Nbr hr/sem">
+                                </div>
+                                <div>
+                                    <label for="tauxhr">Taux horaire</label>
+                                    <input type="number" id="tauxhr" name="tauxhr" placeholder="Taux horaire">
+                                </div>
+                            </div>
+                            <div class="bouton">
+                                <button type="submit">Enregistrer</button>
+                            </div>
+                        </form>  
+                    </div> 
+              
+                    <div id="connection" class="contenuTab"> 
+                        <h3>Informations de connection</h3> 
+              
+                        <form>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="email">
+                            </div>
+                            <div>
+                                <label for="password">Mot de passe</label>
+                                <input type="password" id="password" name="password" placeholder="Password">
+                            </div>
+                            <div class="bouton">
+                                <button type="submit">Enregistrer</button>
+                            </div>
+                        </form>  
+                    </div> 
+              
+                    <div id="documents" class="contenuTab"> 
+                        <h3>Informations sur les documents</h3> 
+              
+                        <p> 
+                            Greedy is an algorithmic paradigm 
+                            that builds up a solution piece by 
+                            piece,always choosing the next piece 
+                            that offers the most obvious and 
+                            immediate benefit. So the problems 
+                            where choosing locally optimal also 
+                            leads to global solution are best 
+                            fit for Greedy. 
+                        </p> 
+                    </div> 
+              
+                    <ul class="ulClass" style="height:300px"> 
+                        <li> 
+                            <button class="tablinks" onclick= 
+                                "ouvreInfo(event, 'personnelles')"> 
+                                Informations personnelles 
+                            </button> 
+                        </li> 
+                          
+                        <li> 
+                            <button class="tablinks" onclick= 
+                                "ouvreInfo(event, 'professionnelles')"> 
+                                Informations professionnelles 
+                            </button> 
+                        </li> 
+              
+                        <li> 
+                            <button class="tablinks" onclick= 
+                                "ouvreInfo(event, 'connection')"> 
+                                Informations de connection 
+                            </button> 
+                        </li> 
+              
+                        <li> 
+                            <button class="tablinks" onclick= 
+                                "ouvreInfo(event, 'documents')"> 
+                                Informations sur les documents 
+                            </button> 
+                        </li> 
+                    </ul> 
+                </div> 
         </main>
         <section id="footer"></section>
         <script src="./../script/index.js"></script>
