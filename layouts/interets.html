@@ -1,3 +1,51 @@
-<div>
-    <p>interets</p>
+<div class="interets">
+    <form>
+        <div class="form-group">
+            <input type="number" placeholder="Montant">
+        </div>
+        <div class="form-group">
+            <select aria-placeholder="Duree">
+                <option value="aucun">--</option>
+                <option value="01mois">01 mois</option>
+                <option value="02mois">02 mois</option>
+                <option value="03mois">03 moins</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="Interet">
+        </div>
+        <button>Ajouter</button>
+    </form>
+    <h3>Liste d'interets</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Montant</th>
+                <th>Duree</th>
+                <th>Interet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="montant">default</td>
+                <td class="duree">default</td>
+                <td class="interet">10%</td>
+            </tr>
+            <tr>
+                <td class="montant">5 000 CAD</td>
+                <td class="duree">01 mois</td>
+                <td class="interet">10%</td>
+            </tr>
+            <tr>
+                <td class="montant">5 000 CAD</td>
+                <td class="duree">02 mois</td>
+                <td class="interet">12%</td>
+            </tr>
+            <tr>
+                <td class="montant">5 000 CAD</td>
+                <td class="duree">03 mois</td>
+                <td class="interet">15%</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
