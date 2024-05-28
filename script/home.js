@@ -1,5 +1,5 @@
 (function() {
-    imports('./')
+    imports('/')
     document.addEventListener("scroll", (event) => {
         const header = document.querySelector('header');
         if (header) {
