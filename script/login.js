@@ -9,6 +9,6 @@ function login(event) {
     } else {
         sessionStorage.setItem("user", JSON.stringify(body))
     }
-    document.location.href = "./../index.html"
+    document.location.href = "./../"
     return false;
 }
