@@ -14,8 +14,7 @@ function ouvreInfo(event, contentNameID) {
         content[count].style.display = "none";
     }
 
-    let links =
-        document.getElementsByClassName("tablinks");
+    let links = document.getElementsByClassName("tablinks");
     totalLinks = links.length;
 
     // Loop through the links and 
