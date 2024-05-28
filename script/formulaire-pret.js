@@ -1,5 +1,5 @@
 (function() {
-    imports('./../components/')
+    imports('./../')
 
     const searchParams = new URLSearchParams(document.location.search)
     if (JSON.parse(searchParams.get("simulation"))) {

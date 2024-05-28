@@ -1,5 +1,5 @@
 (function() {
-    imports('./../components/')
+    imports('./../')
     navigate('statistiques')
 })();
 
