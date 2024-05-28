@@ -29,6 +29,7 @@ function imports(parent) {
             document.getElementById('header').setAttribute("data-parent", parent)
             document.getElementById('lnk-logo').href = parent
             document.getElementById('img-logo').src = parent + "assets/logo.png"
+            document.getElementById('img-profile').src = parent + "assets/user.png"
             document.getElementById('btn-login').href = parent + "page/login.html"
             document.getElementById('lnk-profil').href = parent + "page/profil.html"
             document.getElementById('lnk-dashboard').href = parent + "page/dashboard.html"
